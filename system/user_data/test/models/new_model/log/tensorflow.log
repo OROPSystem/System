@@ -1,0 +1,1 @@
+2022-03-22 14:13:29,851 - Depth of output (64) is not a multiple of the number of groups (3) for 'Conv2D_0_1/Conv2D' (op: 'Conv2D') with input shapes: [?,32,32,3], [3,3,1,64].

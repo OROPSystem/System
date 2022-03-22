@@ -1,0 +1,39 @@
+[[source]]
+url = "https://mirrors.aliyun.com/pypi/simple/"
+verify_ssl = true
+name = "aliyun"
+
+[packages]
+tensorflow = "==1.15.0"
+tensorflowjs = "==1.4.0"
+keras = "==2.2.4"
+dill = "==0.2.8.2"
+GPUtil = "==1.4.0"
+scipy = "==1.1.0"
+lime = "==0.1.1.31"
+scikit-image = "==0.15.0"
+pandas = "==0.23.4"
+Pillow = "==5.4.1"
+opencv-python = ">=3.4.0.12,<4"
+Flask = "==1.0.2"
+Jinja2 = "<=2.11.3"
+psutil = "==5.4.6"
+scikit-learn = "==0.21.2"
+Werkzeug = "==0.14.1"
+Flask-SQLAlchemy = "==2.3.2"
+Flask-Login = "==0.4.1"
+SQLAlchemy = "==1.2.14"
+Flask-WTF = "==0.14.2"
+WTForms = "==2.2.1"
+Flask-Uploads = "==0.2.1"
+lark-parser = "==0.6.5"
+matplotlib = "==2.2.2"
+pandas-profiling = "==1.4.1"
+psycopg2-binary = "==2.8.6"
+Flask-Bootstrap = "==3.3.7.1"
+gunicorn = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
