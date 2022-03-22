@@ -110,12 +110,12 @@ def before_request():
     if request.path in ["/", "/login"]:
         return None
     else:
-        path = pathlib.Path(f"D:\\WebDevelop\\System\\system\\user_data\\test\\language")
+        path = pathlib.Path(f"system/user_data/test/language")
         g.language = path.read_text()
 
 @app.route('/language', methods=["POST"])
 def language():
-    path = pathlib.Path(f"D:\\WebDevelop\\System\\system\\user_data\\test\\language")
+    path = pathlib.Path(f"system/user_data/test/language")
     path.touch(exist_ok=True)
     path.write_text(request.form.get("language"))
     return jsonify({"code": 200,
