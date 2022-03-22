@@ -491,6 +491,7 @@ def delete_file_test(request, param_configs, USER_ROOT, username):
 
 
 def remove_log(log_dir):
+    log_dir = "system\\user_data\\test\\models\\iris_classification\\log"
     logfile = [os.path.join(log_dir, f) for f in os.listdir(log_dir)]
     for f in logfile:
         open(f, "w").close()

@@ -216,6 +216,7 @@ class Session:
         return False
 
     def check_log_fp(self, all_params_config):
+        # print(os.path.join(all_params_config["PATHS"]["log_dir"], "tensorflow.log"))
         logfile = os.path.join(all_params_config["PATHS"]["log_dir"], "tensorflow.log")
         try:
             self.set("log_fp", open(logfile))
