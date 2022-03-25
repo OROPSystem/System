@@ -390,6 +390,9 @@ def gui_load():
             model_name=model_name,
             num_outputs=hlp.get_num_outputs(),
             error=error,
+            zh=json_zh,
+            en=json_en,
+            language=g.language
         )
 
     cy_model = sys_ops.load_cy_model(model_name, username, USER_ROOT)
