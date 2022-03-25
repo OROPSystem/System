@@ -7,9 +7,9 @@
 {% block content %}
 
     <ol class="breadcrumb">
-        <li class="breadcrumb-item">YOU ARE HERE</li>
-        <li class="breadcrumb-item"> Train</li>
-        <li class="breadcrumb-item active">Tensorboard</li>
+        <li class="breadcrumb-item" id="YOUAREHERE">YOU ARE HERE</li>
+        <li class="breadcrumb-item" id="TRAIN"> Train</li>
+        <li class="breadcrumb-item active" id="TENSORBOARD">Tensorboard</li>
     </ol>
 
     <div class="row">
@@ -51,10 +51,10 @@
     </script>
     <script type=text/javascript>
         function change_text(language) {
-            {#language = language["Dashboard"];#}
-            {#$("#teamIntroInfo").html(language["teamIntroInfo"]);#}
-            {#$("#teamIntro").html(language["teamIntro"]);#}
-            {#$("#systemIntro").html(language["systemIntro"]);#}
+            language = language["Tensorboard"];
+            $("#YOUAREHERE").html(language["YOUAREHERE"]);
+            $("#TRAIN").html(language["TRAIN"]);
+            $("#TENSORBOARD").html(language["TENSORBOARD"]);
             {#$("#systemIntroInfo").html(language["systemIntroInfo"]);#}
             {#$("#systemModelSave").html(language["systemModelSave"]);#}
             {#$("#systemDatasetSave").html(language["systemDatasetSave"]);#}

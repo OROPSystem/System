@@ -19,6 +19,83 @@
     "systemIntroInfo": "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表面缺陷智能识别系统主要包括了：数据导入，数据增强，模型搭建，模型载入，模型保存，结果可视化等模块。整个缺陷识别系统包括了缺陷识别的数据库和算法模型库，缺陷识别模型以卷积神经网络为主，可以实现导入以后模型，也可以利用拖拽模块进行搭建。当前为1.0 beta版本，主要适用于表面缺陷的分类问题，后续还会针对表面缺陷的检测，定位等任务继续开发。",
     "systemModelSave": "缺陷识别系统已有模型",
     "systemDatasetSave": "缺陷识别系统数据集",
-    "systemDevelopers": "缺陷识别系统开发人员"
+    "systemDevelopers": "缺陷识别系统开发人员",
+    "YOUAREHERE": "导航&nbsp;当前位置",
+    "HOME": "主页"
+  },
+  "Tabular": {
+    "Upload": "上传",
+    "UploadData": "数据",
+    "Generate": "生成",
+    "GenerateData": "数据",
+    "Choose": "选择",
+    "ChooseData": "数据",
+    "Raw": "原始",
+    "RawData": "数据",
+    "Scatter": "散点",
+    "Plot": "图",
+    "Feature": "特征",
+    "Histogram": "直方图",
+    "Heat": "热力",
+    "Map": "图",
+    "Save": "保存",
+    "ShowReport": "打印报告",
+    "YOUAREHERE": "导航&nbsp;当前位置",
+    "DATASETS": "数据集",
+    "TABULAR": "表格数据"
+  },
+  "Image": {
+    "Upload": "上传",
+    "UploadData": "数据",
+    "Choose": "选择",
+    "ChooseData": "数据",
+    "Sample": "样例",
+    "Images": "图片",
+    "Label": "标签",
+    "Distribution": "分布",
+    "YOUAREHERE": "导航&nbsp;当前位置",
+    "DATASETS": "数据集",
+    "IMAGE": "图像数据"
+  },
+  "Models": {
+    "YOUAREHERE": "导航&nbsp;当前位置",
+    "MODELS": "模型"
+  },
+  "Run": {
+    "YOUAREHERE": "导航&nbsp;当前位置",
+    "TRAIN": "训练",
+    "RUN": "运行"
+  },
+  "Tensorboard": {
+    "YOUAREHERE": "导航&nbsp;当前位置",
+    "TRAIN": "训练",
+    "TENSORBOARD": "监测看板"
+  },
+  "Predict": {
+    "Your": "指定",
+    "Model": "模型",
+    "Features": "特征",
+    "YOUAREHERE": "导航&nbsp;当前位置",
+    "PREDICT": "预测"
+  },
+  "Test":{
+    "Your": "指定",
+    "Model": "模型",
+    "Predictions": "预测",
+    "TestFile": "测试文件",
+    "YOUAREHERE": "导航&nbsp;当前位置",
+    "TEST": "测试"
+  },
+  "Deploy": {
+    "Your": "指定",
+    "YourModel": "模型",
+    "Standard": "标准",
+    "StandardFormat": "格式",
+    "Deploy": "部署",
+    "DeployModel": "模型",
+    "Example": "样例",
+    "ExampleFormat": "格式",
+    "YOUAREHERE": "导航&nbsp;当前位置",
+    "DEPLOYMENT": "部署"
   }
 }

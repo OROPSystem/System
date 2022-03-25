@@ -22,8 +22,8 @@
 {% block content %}
 
     <ol class="breadcrumb">
-        <li class="breadcrumb-item">YOU ARE HERE</li>
-        <li class="breadcrumb-item active"> Deployment</li>
+        <li class="breadcrumb-item" id="YOUAREHERE">YOU ARE HERE</li>
+        <li class="breadcrumb-item active" id="DEPLOYMENT"> Deployment</li>
     </ol>
 
     <div class="row ">
@@ -31,7 +31,7 @@
             <section class="widget widget-overflow" id="run_config_div">
                 <header>
                     <h6>
-                        Your <span class="fw-semi-bold">Model</span>
+                        <span id="Your">Your</span> <span class="fw-semi-bold" id="YourModel">Model</span>
                     </h6>
                 </header>
                 <div class="widget-body margin-top-15">
@@ -76,7 +76,7 @@
             <section class="widget widget-overflow">
                 <header>
                     <h6>
-                        Standard <span class="fw-semi-bold">Format</span>
+                        <span id="Standard">Standard</span> <span class="fw-semi-bold" id="StandardFormat">Format</span>
                     </h6>
                 </header>
                 <div class="widget-controls">
@@ -108,7 +108,7 @@
             <section class="widget widget-overflow">
                 <header>
                     <h6>
-                        Deploy <span class="fw-semi-bold">Model</span>
+                        <span id="Deploy">Deploy</span> <span class="fw-semi-bold" id="DeployModel">Model</span>
                     </h6>
                 </header>
                 <div class="widget-body margin-top-15">
@@ -146,7 +146,7 @@
             <section class="widget widget-overflow">
                 <header>
                     <h6>
-                        Example <span class="fw-semi-bold">Format</span>
+                        <span id="Example">Example</span> <span class="fw-semi-bold" id="ExampleFormat">Format</span>
                     </h6>
                 </header>
                 <div class="widget-controls">
@@ -202,14 +202,17 @@
         };
 
         function change_text(language) {
-            {#language = language["Dashboard"];#}
-            {#$("#teamIntroInfo").html(language["teamIntroInfo"]);#}
-            {#$("#teamIntro").html(language["teamIntro"]);#}
-            {#$("#systemIntro").html(language["systemIntro"]);#}
-            {#$("#systemIntroInfo").html(language["systemIntroInfo"]);#}
-            {#$("#systemModelSave").html(language["systemModelSave"]);#}
-            {#$("#systemDatasetSave").html(language["systemDatasetSave"]);#}
-            {#$("#systemDevelopers").html(language["systemDevelopers"]);#}
+            language = language["Deploy"];
+            $("#Your").html(language["Your"]);
+            $("#YourModel").html(language["YourModel"]);
+            $("#Standard").html(language["Standard"]);
+            $("#StandardFormat").html(language["StandardFormat"]);
+            $("#Deploy").html(language["Deploy"]);
+            $("#DeployModel").html(language["DeployModel"]);
+            $("#Example").html(language["Example"]);
+            $("#ExampleFormat").html(language["ExampleFormat"]);
+            $("#YOUAREHERE").html(language["YOUAREHERE"]);
+            $("#DEPLOYMENT").html(language["DEPLOYMENT"]);
         }
     </script>
 

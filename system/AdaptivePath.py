@@ -12,3 +12,4 @@ for model_dir in path.iterdir():
     for p in config["PATHS"]:
         config.set("PATHS", p, str(pathlib.Path(root/model_dir/config["PATHS"][p].split("\\")[-1])))
     config.write(open(model_config, "w"))
+print("All config in user_data have changed as your own Path!")

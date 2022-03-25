@@ -19,6 +19,83 @@
     "systemIntroInfo": "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The surface defect intelligent recognition system mainly includes: data import, data augmentation, model building, model loading, model saving, result visualisation and other modules. The entire system includes a database of defect recognition and a library of algorithmic models. The defect recognition models are mainly convolutional neural networks, which can be imported and built using the Drag & Drop module. The current version is 1.0 beta, mainly applicable to the surface defect classification, and will continue to be developed for the detection and localization.",
     "systemModelSave": "Models available",
     "systemDatasetSave": "Datasets available",
-    "systemDevelopers": "System Developers"
+    "systemDevelopers": "System Developers",
+    "YOUAREHERE": "YOU ARE HERE",
+    "HOME": "Home"
+  },
+  "Tabular": {
+    "Upload": "Upload",
+    "UploadData": "Data",
+    "Generate": "Generate",
+    "GenerateData": "Data",
+    "Choose": "Choose",
+    "ChooseData": "Data",
+    "Raw": "Raw",
+    "RawData": "Data",
+    "Scatter": "Scatter",
+    "Plot": "Plot",
+    "Feature": "Feature",
+    "Histogram": "Histogram",
+    "Heat": "Heat",
+    "Map": "Map",
+    "Save": "Save",
+    "ShowReport": "Show report",
+    "YOUAREHERE": "YOU ARE HERE",
+    "DATASETS": "Datasets",
+    "TABULAR": "Tabular"
+    },
+  "Image": {
+    "Upload": "Upload",
+    "UploadData": "Data",
+    "Choose": "Choose",
+    "ChooseData": "Data",
+    "Sample": "Sample",
+    "Images": "Images",
+    "Label": "Label",
+    "Distribution": "Distribution",
+    "YOUAREHERE": "YOU ARE HERE",
+    "DATASETS": "Datasets",
+    "IMAGE": "Image"
+  },
+  "Models": {
+    "YOUAREHERE": "YOU ARE HERE",
+    "MODELS": "Models"
+  },
+  "Run": {
+    "YOUAREHERE": "YOU ARE HERE",
+    "TRAIN": "Train",
+    "RUN": "Run"
+  },
+  "Tensorboard": {
+    "YOUAREHERE": "YOU ARE HERE",
+    "TRAIN": "Train",
+    "TENSORBOARD": "Tensorboard"
+  },
+  "Predict": {
+    "Your": "Your",
+    "Model": "Model",
+    "Features": "Features",
+    "YOUAREHERE": "YOU ARE HERE",
+    "PREDICT": "Predict"
+  },
+  "Test": {
+    "Your": "Your",
+    "Model": "Model",
+    "Predictions": "Predictions",
+    "TestFile": "Test File",
+    "YOUAREHERE": "YOU ARE HERE",
+    "TEST": "Test"
+  },
+  "Deploy": {
+    "Your": "Your",
+    "YourModel": "Model",
+    "Standard": "Standard",
+    "StandardFormat": "Format",
+    "Deploy": "Deploy",
+    "DeployModel": "Model",
+    "Example": "Example",
+    "ExampleFormat": "Format",
+    "YOUAREHERE": "YOU ARE HERE",
+    "DEPLOYMENT": "Deployment"
   }
 }

@@ -14,8 +14,8 @@
 {% block content %}
 
     <ol class="breadcrumb">
-        <li class="breadcrumb-item">YOU ARE HERE</li>
-        <li class="breadcrumb-item active"> Home</li>
+        <li class="breadcrumb-item" id="YOUAREHERE">YOU ARE HERE</li>
+        <li class="breadcrumb-item active" id="HOME"> Home</li>
     </ol>
     <div class="row">
         <div class="col-lg-5">
@@ -109,7 +109,8 @@
             $("#systemModelSave").html(language["systemModelSave"]);
             $("#systemDatasetSave").html(language["systemDatasetSave"]);
             $("#systemDevelopers").html(language["systemDevelopers"]);
-
+            $("#YOUAREHERE").html(language["YOUAREHERE"]);
+            $("#HOME").html(language["HOME"]);
         }
     </script>
 {% endblock %}

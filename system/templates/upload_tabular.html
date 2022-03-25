@@ -24,9 +24,9 @@
     {% endwith %}
 
     <ol class="breadcrumb">
-        <li class="breadcrumb-item">YOU ARE HERE</li>
-        <li class="breadcrumb-item"> Datasets</li>
-        <li class="breadcrumb-item active">Tabular</li>
+        <li class="breadcrumb-item" id="YOUAREHERE">YOU ARE HERE</li>
+        <li class="breadcrumb-item" id="DATASETS"> Datasets</li>
+        <li class="breadcrumb-item active" id="TABULAR">Tabular</li>
     </ol>
     <div class="row">
         <div class="col-lg-5">
@@ -35,7 +35,7 @@
                     {{ form.csrf_token }}
                     <header>
                         <h6>
-                            Upload <span class="fw-semi-bold">Data</span>
+                            <span id="Upload">Upload</span> <span class="fw-semi-bold" id="UploadData">Data</span>
                         </h6>
                     </header>
                     <div class="margin-top-15">
@@ -55,7 +55,7 @@
             <section class="widget min-height-300 widget-overflow">
                 <header>
                     <h6>
-                        Generate <span class="fw-semi-bold">Data</span>
+                        <span id="Generate">Generate</span> <span class="fw-semi-bold" id="GenerateData">Data</span>
                     </h6>
                 </header>
                 <div class="margin-top-15">
@@ -80,7 +80,7 @@
             <section class="widget widget-overflow">
                 <header>
                     <h6>
-                        Choose <span class="fw-semi-bold">Data</span>
+                        <span id="Choose">Choose</span> <span class="fw-semi-bold" id="ChooseData">Data</span>
                     </h6>
                 </header>
                 <div class="table-responsive">
@@ -108,7 +108,7 @@
             <section class="widget widget-overflow">
                 <header>
                     <h6>
-                        Raw <span class="fw-semi-bold">Data</span>
+                        <span id="Raw">Raw</span> <span class="fw-semi-bold" id="RawData">Data</span>
                     </h6>
                     <div class="widget-controls">
                         <a data-widgster="expand" title="Expand" href="#"><i
@@ -154,7 +154,7 @@
             <section class="widget">
                 <header>
                     <h6>
-                        Scatter <span class="fw-semi-bold">Plot</span>
+                        <span id="Scatter">Scatter</span> <span class="fw-semi-bold" id="Plot">Plot</span>
                     </h6>
                     <div class="widget-controls">
                         <a data-widgster="expand" title="Expand" href="#"><i
@@ -185,7 +185,7 @@
             <section class="widget">
                 <header>
                     <h6>
-                        Feature <span class="fw-semi-bold">Histogram</span>
+                        <span id="Feature">Feature</span> <span class="fw-semi-bold" id="Histogram">Plot</span>
                     </h6>
                     <div class="widget-controls">
                         <a data-widgster="expand" title="Expand" href="#"><i
@@ -211,7 +211,7 @@
             <section class="widget">
                 <header>
                     <h6>
-                        Heat <span class="fw-semi-bold">Map</span>
+                        <span id="Heat">Heat</span> <span class="fw-semi-bold" id="Map">Map</span>
                     </h6>
                     <div class="widget-controls">
                         <a data-widgster="expand" title="Expand" href="#"><i
@@ -275,14 +275,25 @@
         };
 
         function change_text(language) {
-            {#language = language["Dashboard"];#}
-            {#$("#teamIntroInfo").html(language["teamIntroInfo"]);#}
-            {#$("#teamIntro").html(language["teamIntro"]);#}
-            {#$("#systemIntro").html(language["systemIntro"]);#}
-            {#$("#systemIntroInfo").html(language["systemIntroInfo"]);#}
-            {#$("#systemModelSave").html(language["systemModelSave"]);#}
-            {#$("#systemDatasetSave").html(language["systemDatasetSave"]);#}
-            {#$("#systemDevelopers").html(language["systemDevelopers"]);#}
+            language = language["Tabular"];
+            $("#Upload").html(language["Upload"]);
+            $("#UploadData").html(language["UploadData"]);
+            $("#Generate").html(language["Generate"]);
+            $("#GenerateData").html(language["GenerateData"]);
+            $("#Choose").html(language["Choose"]);
+            $("#ChooseData").html(language["ChooseData"]);
+            $("#Raw").html(language["Raw"]);
+            $("#RawData").html(language["RawData"]);
+            $("#Scatter").html(language["Scatter"]);
+            $("#Plot").html(language["Plot"]);
+            $("#Feature").html(language["Feature"]);
+            $("#Histogram").html(language["Histogram"]);
+            $("#Heat").html(language["Heat"]);
+            $("#Map").html(language["Map"]);
+            $(".glyphicon glyphicon-save").text(language["Save"]);
+            $("#YOUAREHERE").html(language["YOUAREHERE"]);
+            $("#DATASETS").html(language["DATASETS"]);
+            $("#TABULAR").html(language["TABULAR"]);
         }
     </script>
 {% endblock %}

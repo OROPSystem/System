@@ -10,16 +10,16 @@
 {% block content %}
 
     <ol class="breadcrumb">
-        <li class="breadcrumb-item">YOU ARE HERE</li>
-        <li class="breadcrumb-item"> Datasets</li>
-        <li class="breadcrumb-item active">Image</li>
+        <li class="breadcrumb-item" id="YOUAREHERE">YOU ARE HERE</li>
+        <li class="breadcrumb-item" id="DATASETS"> Datasets</li>
+        <li class="breadcrumb-item active" id="IMAGE">Image</li>
     </ol>
     <div class="row">
         <div class="col-lg-12">
             <section class="widget widget-overflow">
                 <header>
                     <h6>
-                        Upload <span class="fw-semi-bold">Data</span>
+                        <span id="Upload">Upload</span> <span class="fw-semi-bold" id="UploadData">Data</span>
                     </h6>
                 </header>
                 <div class="row">
@@ -70,7 +70,7 @@
             <section class="widget widget-overflow">
                 <header>
                     <h6>
-                        Choose <span class="fw-semi-bold">Data</span>
+                        <span id="Choose">Choose</span> <span class="fw-semi-bold" id="ChooseData">Data</span>
                     </h6>
                 </header>
                 <div class="table-responsive">
@@ -98,7 +98,7 @@
             <section class="widget widget-overflow">
                 <header>
                     <h6>
-                        Sample <span class="fw-semi-bold">Images</span>
+                        <span id="Sample">Sample</span> <span class="fw-semi-bold" id="Images">Images</span>
                     </h6>
                     <div class="widget-controls">
                         <a data-widgster="expand" title="Expand" href="#"><i
@@ -140,7 +140,7 @@
             <section class="widget">
                 <header>
                     <h6>
-                        Label <span class="fw-semi-bold">Distribution</span>
+                        <span id="Label">Label</span> <span class="fw-semi-bold" id="Distribution">Distribution</span>
                     </h6>
                     <div class="widget-controls">
                         <a data-widgster="expand" title="Expand" href="#"><i
@@ -189,14 +189,18 @@
         };
 
         function change_text(language) {
-            {#language = language["Dashboard"];#}
-            {#$("#teamIntroInfo").html(language["teamIntroInfo"]);#}
-            {#$("#teamIntro").html(language["teamIntro"]);#}
-            {#$("#systemIntro").html(language["systemIntro"]);#}
-            {#$("#systemIntroInfo").html(language["systemIntroInfo"]);#}
-            {#$("#systemModelSave").html(language["systemModelSave"]);#}
-            {#$("#systemDatasetSave").html(language["systemDatasetSave"]);#}
-            {#$("#systemDevelopers").html(language["systemDevelopers"]);#}
+            language = language["Image"];
+            $("#Upload").html(language["Upload"]);
+            $("#UploadData").html(language["UploadData"]);
+            $("#Choose").html(language["Choose"]);
+            $("#ChooseData").html(language["ChooseData"]);
+            $("#Sample").html(language["Sample"]);
+            $("#Images").html(language["Images"]);
+            $("#Label").html(language["Label"]);
+            $("#Distribution").html(language["Distribution"]);
+            $("#YOUAREHERE").html(language["YOUAREHERE"]);
+            $("#DATASETS").html(language["DATASETS"]);
+            $("#IMAGE").html(language["IMAGE"]);
         }
     </script>
 {% endblock %}

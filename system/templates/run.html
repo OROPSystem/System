@@ -13,9 +13,9 @@
 {% block content %}
 
     <ol class="breadcrumb">
-        <li class="breadcrumb-item">YOU ARE HERE</li>
-        <li class="breadcrumb-item"> Train</li>
-        <li class="breadcrumb-item active">Run</li>
+        <li class="breadcrumb-item" id="YOUAREHERE">YOU ARE HERE</li>
+        <li class="breadcrumb-item" id="TRAIN"> Train</li>
+        <li class="breadcrumb-item active" id="RUN">Run</li>
     </ol>
 
     <div class="row">
@@ -244,10 +244,10 @@
         };
 
         function change_text(language) {
-            {#language = language["Dashboard"];#}
-            {#$("#teamIntroInfo").html(language["teamIntroInfo"]);#}
-            {#$("#teamIntro").html(language["teamIntro"]);#}
-            {#$("#systemIntro").html(language["systemIntro"]);#}
+            language = language["Run"];
+            $("#YOUAREHERE").html(language["YOUAREHERE"]);
+            $("#TRAIN").html(language["TRAIN"]);
+            $("#RUN").html(language["RUN"]);
             {#$("#systemIntroInfo").html(language["systemIntroInfo"]);#}
             {#$("#systemModelSave").html(language["systemModelSave"]);#}
             {#$("#systemDatasetSave").html(language["systemDatasetSave"]);#}

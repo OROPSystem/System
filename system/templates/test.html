@@ -13,8 +13,8 @@
 {% block content %}
 
     <ol class="breadcrumb">
-        <li class="breadcrumb-item">YOU ARE HERE</li>
-        <li class="breadcrumb-item active"> Test</li>
+        <li class="breadcrumb-item" id="YOUAREHERE">YOU ARE HERE</li>
+        <li class="breadcrumb-item active" id="TEST"> Test</li>
     </ol>
 
     <div class="row ">
@@ -24,7 +24,7 @@
                     <section class="widget widget-overflow" id="run_config_div">
                         <header>
                             <h6>
-                                Your <span class="fw-semi-bold">Model</span>
+                                <span class="Your">Your</span> <span class="fw-semi-bold" id="Model">Model</span>
                             </h6>
                         </header>
                         <div class="widget-body margin-top-20">
@@ -70,7 +70,7 @@
                     <section class="widget widget-overflow disabled-custom" id="features_div">
                         <header>
                             <h6>
-                                Your <span class="fw-semi-bold">Test File</span>
+                                <span class="Your">Your</span> <span class="fw-semi-bold" id="TestFile">Test File</span>
                             </h6>
                         </header>
 
@@ -139,7 +139,7 @@
                     <section class="widget widget-overflow" id="">
                         <header>
                             <h6>
-                                Your <span class="fw-semi-bold">Predictions</span>
+                                <span class="Your">Your</span> <span class="fw-semi-bold" id="Predictions">Predictions</span>
                             </h6>
                         </header>
 
@@ -256,14 +256,14 @@
         };
 
         function change_text(language) {
-            {#language = language["Dashboard"];#}
-            {#$("#teamIntroInfo").html(language["teamIntroInfo"]);#}
-            {#$("#teamIntro").html(language["teamIntro"]);#}
-            {#$("#systemIntro").html(language["systemIntro"]);#}
-            {#$("#systemIntroInfo").html(language["systemIntroInfo"]);#}
-            {#$("#systemModelSave").html(language["systemModelSave"]);#}
-            {#$("#systemDatasetSave").html(language["systemDatasetSave"]);#}
-            {#$("#systemDevelopers").html(language["systemDevelopers"]);#}
+            language = language["Test"];
+            $(".Your").html(language["Your"]);
+            $("#Model").html(language["Model"]);
+            $("#Predictions").html(language["Predictions"]);
+            $("#TestFile").html(language["TestFile"]);
+            $("#YOUAREHERE").html(language["YOUAREHERE"]);
+            $("#TEST").html(language["TEST"]);
+
         }
     </script>
 
